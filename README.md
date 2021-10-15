@@ -1,4 +1,4 @@
-# react-complete-guide
+# react-expense-tracker
 
 
 **Run attached code:** </br>
