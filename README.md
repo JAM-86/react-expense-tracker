@@ -1,6 +1,6 @@
 # react-expense-tracker
 
-**Prerequisites** <br/>
+**Prerequisites:** <br/>
 - Install Node.js <br/>
 - https://nodejs.org/en/download/
 
