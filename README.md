@@ -11,9 +11,10 @@ Then run `npm install` to install all required dependencies (this will create a 
 
 
 **Run attached code:** </br>
-Open project, navigate into specific code snapshot folder via the `cd` command in your command prompt or termiinal first.
-
-execute `npm start` command
+- Open project i.e. VSCode
+- Open terminal
+- Navigate into specific code snapshot folder via the `cd` command
+- Execute `npm start` command
 
 **Udemy course:** </br>
 https://www.udemy.com/course/react-the-complete-guide-incl-redux/
