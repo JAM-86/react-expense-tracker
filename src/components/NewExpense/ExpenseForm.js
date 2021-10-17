@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
+  //Array destructuring assigning an empty string into 'enteredTitle' while creating a function 'setEnteredTitle' to allow us to save the state of title of expense(s)
   const [enteredTitle, setEnteredTitle] = useState("");
+  //Array destructuring assigning an empty string into 'enteredAmount' while creating a function 'setEnteredAmount' to allow us to save the state of amount of expense(s)
   const [enteredAmount, setEnteredAmount] = useState("");
+  //Array destructuring assigning an empty string into 'enteredDate' while creating a function 'setEnteredDate' to allow us to save the state of date of expense(s)
   const [enteredDate, setEnteredDate] = useState("");
 
   //   const [userInput, setUserInput] = useState({
@@ -13,6 +16,7 @@ const ExpenseForm = (props) => {
   //     enteredDate: '',
   //   });
 
+  //Function to 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
 
