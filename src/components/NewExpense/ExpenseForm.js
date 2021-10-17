@@ -16,7 +16,7 @@ const ExpenseForm = (props) => {
   //     enteredDate: '',
   //   });
 
-  //Function to 
+  //Event function to set whatever keystroke data to 'enteredTitle' value to and saved whenever onChange event occurs within titlChangeHandler()
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
 
@@ -30,6 +30,7 @@ const ExpenseForm = (props) => {
     // });
   };
 
+  //Event function to set whatever keystroke data to 'enteredAmount' value to and saved whenever onChange event occurs within amountChangeHandler()
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
 
@@ -43,6 +44,7 @@ const ExpenseForm = (props) => {
     // });
   };
 
+  //Event function to set whatever keystroke data to 'enteredDate' value to and saved whenever onChange event occurs within dateChangeHandler()
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
 
@@ -56,9 +58,12 @@ const ExpenseForm = (props) => {
     // });
   };
 
+  //Event function to handle submit button i.e. 'Add Expense' to set enteredTitle, enteredAmount and eventeredDate to expenseData object which is passed through onSaveExpenseData()
   const submitHandler = (event) => {
+    //Prevents/stops the default action of an element from happening
     event.preventDefault();
 
+    //Set enteredTitle, enteredAmount and eneteredDate to exepenseData object
     const expenseData = {
       title: enteredTitle,
       amount: +enteredAmount,
@@ -104,7 +109,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button type="button" onClick={props.onCancel}>Cancel</button>
+        <button type="button" onClick={props.onCancel}>
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
