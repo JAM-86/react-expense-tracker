@@ -45,8 +45,9 @@ const App = () => {
   };
   return (
     <div>
-      {/*New Expense component used for rendering form i.e. title, amount, dates and buttons. Contains one argument storing 'addExpenseHandler' funciton which is set to 'onAddExpense' prop*/}
+      {/*New Expense component used for rendering new expense form i.e. title, amount, dates and buttons. Contains one argument for storing 'addExpenseHandler()' funciton which is passed into 'onAddExpense' props*/}
       <NewExpense onAddExpense={addExpenseHandler} />
+      {/*Expenses component used for rending list of expenses. Contains one arugment for storing array of 'expenses' which we set the state in our 'setExpense()' function then passed into 'items' props */}
       <Expenses items={expenses} />
     </div>
   );
